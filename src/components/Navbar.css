@@ -1,0 +1,168 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-left .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-center .navbar-search {
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navbar-location {
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .navbar-signin {
+    background-color: #ff5733;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .navbar-search {
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    color: black; /* Set the text color to black */
+    background-color: #f0f0f0; /* Optional: light background for contrast */
+  }
+
+  /* Navbar.css */
+.navbar-location {
+    position: relative;
+    font-size: 16px;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 30px;
+    background-color: #333;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    width: 100px;
+  }
+  
+  .dropdown-item {
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #555;
+  }
+  
+
+
+  /* Navbar.css */
+
+/* Page container which holds the page content and modal */
+.page-container {
+  position: relative;
+  transition: filter 0.3s ease;
+}
+
+/* Apply blur to the background content when the modal is open */
+.page-container.blurred {
+  filter: blur(5px); /* Apply blur effect to the background */
+  pointer-events: none; /* Prevent interaction with background */
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 80%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Close Button for Modal */
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Modal Form Elements */
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal form input,
+.modal form button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.modal form button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,168 @@
+/* Profile Page Styles */
+.profile-page {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.profile-page h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #DC3558; /* Match your brand color */
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.user-info {
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.user-info p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.booked-movies h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #DC3558;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.booked-movies ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Increased min-width */
+  gap: 30px; /* Increased gap between cards */
+}
+
+.booked-movies li {
+  background-color: #fff;
+  padding: 20px; /* Increased padding */
+  border-radius: 15px; /* Larger border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.booked-movies li:hover {
+  transform: scale(1.1); /* Slightly larger scale effect */
+}
+
+.booked-movies img {
+  width: 100%;
+  height: 250px; /* Increased height */
+  object-fit: cover;
+  border-radius: 15px; /* Match card radius */
+  margin-bottom: 15px; /* Added space below the image */
+}
+
+.booked-movies h4 {
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.booked-movies p {
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: #777;
+}
+
+.error {
+  color: #fff;
+  background-color: #dc3545;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .booked-movies ul {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .user-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .booked-movies h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #DC3558;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 1rem; /* Ensure button text is legible */
+}
+
+.cancel-button:hover {
+  background-color: #a71d2a;
+}
+
+
+.booked-movies {
+  margin-top: 50px;
+  padding: 20px;
+  /* max-width: 1200px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booked-movies h3 {
+  font-size: 2rem; /* Larger heading */
+  font-weight: bold;
+  color: #DC3558;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.booked-movies ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 30px;
+}
+.poster {
+  height: 300px; /* Appropriate height for a poster */
+  width: 200px; /* Maintain the aspect ratio for typical posters */
+  object-fit: cover; /* Ensures the poster fits without distortion */
+  border-radius: 10px; /* Adds rounded corners */
+  margin: 10px auto; /* Centers the poster if needed */
+  display: block; /* Ensures block display for proper alignment */
+}

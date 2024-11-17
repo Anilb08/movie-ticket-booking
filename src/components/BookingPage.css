@@ -1,0 +1,91 @@
+.booking-page {
+  padding: 20px;
+}
+
+.booking-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #333;
+  letter-spacing: 2px;
+}
+
+.movie-details-container {
+  display: flex;
+  justify-content: left; /* Centers the content horizontally */
+  align-items: center; /* Vertically center the poster and content */
+  margin-bottom: 20px;
+}
+
+
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Align text to the left */
+  padding: 20px;
+  margin-left: 20px; /* Added margin for spacing */
+  justify-content: center; /* Vertically center the content */
+}
+
+.movie-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.movie-info h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+.movie-info p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.booking-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.booking-actions button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #DC3558;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.booking-actions button:hover {
+  background-color: #f16281;
+}
+
+.cancel-booking-button {
+  background-color: #dc3545;
+}
+
+.cancel-booking-button:hover {
+  background-color: #c82333;
+}
+
+.book-now-button {
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+
+.booking-actions {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
